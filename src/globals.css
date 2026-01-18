@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+  @apply box-border;
+}
+
+body {
+  @apply bg-white text-primary-dark;
+}
+
+/* Udmurt ornament decorative elements */
+.ornament {
+  position: relative;
+}
+
+.ornament-diamond {
+  width: 20px;
+  height: 20px;
+  background: linear-gradient(45deg, transparent 30%, #FF0000 30%, #FF0000 70%, transparent 70%);
+  display: inline-block;
+}
+
+.ornament-star {
+  position: relative;
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  color: #FF0000;
+}
+
+/* Hover effects */
+.card-hover {
+  @apply transition-all duration-300 hover:shadow-lg hover:-translate-y-1;
+}
+
+.button-hover {
+  @apply transition-all duration-200 hover:scale-105 active:scale-95;
+}
